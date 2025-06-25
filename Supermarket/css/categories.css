@@ -1,0 +1,208 @@
+.link-to-category{
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    word-wrap: none;
+}
+.link-to-category article{
+    display: flex;
+    gap: 5%;
+    word-wrap: none;
+}
+.corres-cate-link {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+}
+.corres-cate-link img{
+    width: 20px;
+}
+.link-to-category article .corres-cate-link a{
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+
+/* categories */
+.grocery-main{
+   padding-left: 3%;
+   padding-right: 3%;
+
+   /* max-width: 1200px;  Adjust based on screen size */
+   margin: 0 auto;
+}
+.grocery-main .heading-img{
+    display: flex;
+    align-items: center;
+}
+.grocery-main .heading-img img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.grocery-main h2 {
+  /* margin-left: 3%;  */
+  margin-bottom: 1rem; /* Space between heading and grid */
+  color: #8BC34A;
+  font-size: 32px;
+}
+.grocery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  
+}
+
+.grocery figure img{
+    width: 150px;
+}
+.grocery figcaption{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* fruits */
+.fruits-main{
+   padding-left: 3%;
+   padding-right: 3%;
+   margin: 0 auto;
+}
+.fruits-main .heading-img{
+    display: flex;
+    align-items: center;
+}
+.fruits-main .heading-img img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.fruits-main h2 {
+  /* margin-left: 3%;  */
+  margin-bottom: 1rem; /* Space between heading and grid */
+  color: #8BC34A;
+  font-size: 32px;
+}
+.fruits{
+    display: flex;
+    /* gap: 10px; */
+}
+
+.fruits figure img{
+    width: 150px;
+}
+.fruits figcaption{
+    text-align: center;
+    font-size: 13px;
+}
+
+/* fish */
+.fish-main{
+   padding-left: 3%;
+   padding-right: 3%;
+   margin: 0 auto;
+}
+.fish-main .heading-img{
+    display: flex;
+    align-items: center;
+}
+.fish-main .heading-img img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.fish-main h2 {
+  margin-bottom: 1rem; 
+  color: #8BC34A;
+  font-size: 32px;
+}
+.fish{
+    display: flex;
+    align-items: center;
+}
+
+.fish figure img{
+    width: 150px;
+}
+.fish figcaption{
+    text-align: center;
+    font-size: 13px;
+}
+
+/* packaged foods cards */
+.packaged-main{
+   padding-left: 3%;
+   padding-right: 3%;
+   margin: 0 auto;
+}
+.packaged-main .heading-img{
+    display: flex;
+    align-items: center;
+}
+.packaged-main .heading-img img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.packaged-main h2 {
+  margin-bottom: 1rem; 
+  color: #8BC34A;
+  font-size: 32px;
+}
+.packaged{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  
+}
+
+.packaged figure img{
+    width: 150px;
+}
+.packaged figcaption{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* dairy foods cards */
+.dairy-main{
+   padding-left: 3%;
+   padding-right: 3%;
+   margin: 0 auto;
+}
+.dairy-main .heading-img{
+    display: flex;
+    align-items: center;
+}
+.dairy-main .heading-img img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.dairy-main h2 {
+  margin-bottom: 1rem; 
+  color: #8BC34A;
+  font-size: 32px;
+}
+.dairy{
+    display: flex;
+  
+}
+
+.dairy figure img{
+    width: 150px;
+}
+.dairy figcaption{
+    text-align: center;
+    font-size: 13px;
+}

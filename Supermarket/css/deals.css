@@ -1,0 +1,13 @@
+.deal-banner img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.banner .deals-heading{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav{
+    margin-bottom: 5%;
+}
