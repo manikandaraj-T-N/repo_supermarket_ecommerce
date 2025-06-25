@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroceryHub | Categories</title>
+
+    <link rel="stylesheet" href="./css/home.css">
+
+    <link rel="stylesheet" href="./css/categories.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Top Contact -->
+    <header>
+            <section class="mobile">
+                <a href="tel:+91 8344377594">+91 8344377594</a>
+                <a href="tel:+91 8344377594">+91 9123571394</a>
+            </section>
+
+            <section>
+                <p>World Fastest Online Shopping Destination</p>
+            </section>
+
+            <section class="loc-user">
+
+                <div class="current-loc">
+                <p>Current Location</p>
+                </div>
+                
+                <div class="user">
+                    <select name="account" id="">
+                    <option value="user">User</option>
+                    <option value="user">Admin</option>
+                </select>
+                </div>
+               
+                <div class="profile">
+                    <img src="./Groceries Supermart Website/SVG.png" alt="profile">
+                    <span>Login/Login</span>
+                </div>
+                
+            </section>
+       
+    </header>
+
+
+        <!-- main nav bar -->
+       <nav>
+        <section class="store-img">
+            <img src="./Groceries Supermart Website/Ellipse 1.png" alt="">
+            <span>GroceryHub</span>
+        </section>
+        <section class="nav-links">
+            <a href="./home.html" >Home</a>
+            <a href="#" class="active">Categories</a>
+            <a href="./deals.html">Deals</a>
+        </section>
+       <section class="services">
+             <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #8BC34A;"></i></a>
+                <a id="cartIcon" href="javascript:void(0)">
+                    <i class="fa-solid fa-cart-shopping" style="color: #8BC34A;"></i>
+                    <span id="cartCount">0</span>
+                </a>
+                <a href="#"><i class="fa-regular fa-heart" style="color: #8BC34A;"></i></a>
+                </section>
+
+     </nav>
+     
+     <!-- cart panel details -->
+        <div id="cartPanel" class="hidden">
+        <article class="cart-open-heading">
+             <h2>My Cart</h2>
+             <button class="close-btn"><i class="fa-solid fa-x"></i></button>
+        </article>
+       
+        <ul id="cartItems"></ul>
+        <p><strong>Total: ₹<span id="cartTotal">0.00</span></strong></p>
+        <button onclick="clearCart()" class="clear-cart">Clear Cart</button>
+        </div>
+     <main>
+
+        <!-- links to corresponding section -->
+        <section class="link-to-category">
+            <article>
+                <div class="corres-cate-link">
+                <img src="./Groceries Supermart Website/category-image-corres-grocery.png" alt="category-image-corres-grocery">
+                <a href="">Grocery</a>
+                </div>
+                <div class="corres-cate-link">
+                    <img src="./Groceries Supermart Website/category-image-corres-banana.png" alt="category-image-corres-banana">
+                    <a href="">Fruits and Vegetables</a>
+                </div>
+                <div class="corres-cate-link">
+                     <img src="./Groceries Supermart Website/category-image-corres-fish.png" alt="category-image-corres-fish">
+                     <a href="">Fish & Meat</a>
+                </div>
+                <div class="corres-cate-link">
+                    <img src="./Groceries Supermart Website/categories-image-coress-packaged.png" alt="categories-image-coress-packaged">
+                    <a href="">packaged Foods</a>
+                </div>
+                <div class="corres-cate-link">
+                     <img src="./Groceries Supermart Website/category-image-corres-dairy.png" alt="category-image-corres-dairy">
+                     <a href="">Dairy & Beverages</a>
+                </div>         
+            </article>
+        </section>
+
+        <!-- grocery cards -->
+     <section class="grocery-main">
+        <div class="heading-img">
+             <img src="./Groceries Supermart Website/category-image-corres-grocery.png" alt="">
+             <h2>Grocery</h2>
+        </div>
+       
+       <article class="grocery">
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-rice.png" alt="Rice Products">
+            <figcaption>Rice Products</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-cooking1.png" alt="Cooking Oil">
+            <figcaption>Cooking Oil</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-gheevanaspathi.png" alt="Ghee">
+            <figcaption>Ghee</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-salt.png" alt="Salt">
+            <figcaption>Salt</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-flours.png" alt="Flours">
+            <figcaption>Flours</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-masala.png" alt="Masala">
+            <figcaption>Masala</figcaption>
+        </figure>
+       </article>
+     </section>
+
+     <!-- fruits and vegetables cards -->
+
+      <section class="fruits-main">
+        <div class="heading-img">
+             <img src="./Groceries Supermart Website/category-image-corres-banana.png" alt="">
+             <h2>Fruits and Vegetables</h2>
+        </div>
+       
+       <article class="fruits">
+        <figure>
+            <img src="./Groceries Supermart Website/cate-fruits-1.png" alt="Rice Products">
+            <figcaption>Rice Products</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-fruits-2.png" alt="Cooking Oil">
+            <figcaption>Cooking Oil</figcaption>
+        </figure>
+       </article>
+     </section>
+        
+     <!-- fish and meat -->
+     <section class="fish-main">
+        <div class="heading-img">
+             <img src="./Groceries Supermart Website/category-image-corres-fish.png" alt="">
+             <h2>Fish and Meat</h2>
+        </div>
+       
+       <article class="fish">
+        <figure>
+            <img src="./Groceries Supermart Website/cate-fish-chickenwholecuts.png" alt="chicken whole cuts">
+            <figcaption>Chicken Whole & Cuts</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-fish-meat.png" alt="Meat">
+            <figcaption>Meat</figcaption>
+        </figure>
+         <figure>
+            <img src="./Groceries Supermart Website/cate-fish-fish.png" alt="Fish">
+            <figcaption>Fish & Sea Foods</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-fish-Delicatessen.png" alt="Delicatessen">
+            <figcaption>Delicatessen</figcaption>
+        </figure>
+       </article>
+     </section>
+
+
+        <!-- Packaged foods cards -->
+     <section class="packaged-main">
+        <div class="heading-img">
+             <img src="./Groceries Supermart Website/categories-image-coress-packaged.png" alt="logo-Packaged">
+             <h2>Packaged Foods</h2>
+        </div>
+       
+       <article class="packaged">
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-rice.png" alt="Biscuits & Cookies">
+            <figcaption>Biscuits & Cookies </figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-cooking1.png" alt="Breakfast Cereals">
+            <figcaption>Breakfast Cereals</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-gheevanaspathi.png" alt="Chocolates & Candies">
+            <figcaption>Chocolates & Candies</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-salt.png" alt="Ketchup & Sauces">
+            <figcaption>Ketchup & Sauces</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/Pasta,Noodles.png" alt="Pasta & Noodles">
+            <figcaption>Pasta & Noodles</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/Jams,Spreads.png" alt="Jams & spreads">
+            <figcaption>Jams & spreads</figcaption>
+        </figure>
+       </article>
+     </section>
+
+        <!-- dairy cards foods cards -->
+     <section class="dairy-main">
+        <div class="heading-img">
+             <img src="./Groceries Supermart Website/categories-image-coress-packaged.png" alt="logo-Packaged">
+             <h2>Dairy & Beverages</h2>
+        </div>
+       
+       <article class="dairy">
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-rice.png" alt="Dairy">
+            <figcaption>Dairy</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-cooking1.png" alt="Beverages">
+            <figcaption>Beverages</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-gheevanaspathi.png" alt="Poultry">
+            <figcaption>Poultry</figcaption>
+        </figure>
+        <figure>
+            <img src="./Groceries Supermart Website/cate-groc-salt.png" alt="Breads">
+            <figcaption>Breads</figcaption>
+        </figure>
+       </article>
+     </section>
+
+        <!-- footer -->
+  <footer>
+  <section class="footer-container">
+    <div class="footer-about">
+      <div class="logo-section">
+        <img src="./Groceries Supermart Website/Ellipse 1.png" alt="GroceryHub Logo">
+        <h3>GroceryHub</h3>
+      </div>
+      <p>
+        GroceryHub brings its customers low prices every day. We offer a wide choice covering
+        fresh & packaged food, grains, pulses, dairy, frozen, plastics, utensils, crockery, travel,
+        stationery, & more. SPAR has 13,900 stores in 48 countries. In India, SPAR has 23 stores
+        across 8 cities.
+      </p>   
+    </div>
+
+    <div class="footer-services">
+      
+        <h4>Our Services</h4>
+        <ul>
+          <li>Your Account</li>
+          <li>FAQS</li>
+          <li>Store List</li>
+        </ul>
+      </div>
+
+      <div class="footer-help">
+        <h4>Let Us Help You</h4>
+        <ul>
+          <li>Help & Support</li>
+          <li>Share Feedback</li>
+          <li>Call Us</li>
+        </ul>
+      </div>
+
+      <div class="footer-quicklinks">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Terms</li>
+          <li>Privacy Policy</li>
+          <li>Return & Refund Policy</li>
+        </ul>
+      </div>
+  </section>
+
+  <section class="footer-contact-connect">
+     <article class="contact-info">
+        <div class="contact-link">
+             <a href="mailto:business@groceryhub.com">
+          <i class="fa-solid fa-envelope"></i> business@groceryhub.com
+        </a>
+        </div>
+      
+        <div>
+       <a href="https://www.grocery.in" target="_blank">
+        <i class="fa-solid fa-globe"></i> www.Grocery.in
+        </a>
+        </div>
+
+      </article>
+
+    <article class="footer-social">
+      <h4>Connect With Us</h4>
+      <div class="social-icons">
+        <!-- <img src="./Groceries Supermart Website/footerfb.png" alt="Facebook"> -->
+
+        <!-- <img src="./Groceries Supermart Website/footerX.png" alt="Twitter">
+        <img src="./Groceries Supermart Website/footerinsta.png" alt="Instagram">
+        <img src="./Groceries Supermart Website/footerlinkedin.png" alt="LinkedIn"> -->
+
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <div class="app-downloads">
+        <img src="./Groceries Supermart Website/Link → app-store-image.png" alt="App Store">
+        <img src="./Groceries Supermart Website/Link → paly-store-image.png" alt="Google Play">
+        
+      </div>
+    </article>
+  </section>
+
+  <p class="footer-copy">GroceryHub India © All rights Reserved</p>
+</footer>
+     </main>
+
+     <script src="./js/cart.js"></script>
+</body>
+</html>
